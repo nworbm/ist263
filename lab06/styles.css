@@ -1,0 +1,6 @@
+/* grouped selector, will style all h1 and p */
+b {font-family:'Courier New', Courier, monospace;}
+h1, h2 {color:darkgrey;}
+.evenrow {background-color:burlywood;}
+h1{font-size: 4em}
+h2{font-size: 2em}
