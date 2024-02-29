@@ -1,0 +1,10 @@
+body{background-color:#C02942;}
+h1, h2, h3 {color: #D95B43; }
+a:hover {color: #ECD078;}
+nav {background-color: #ECD078;}
+nav a {color: #C02942;
+        padding: 10px;
+        margin-bottom: 30px; }
+nav a:hover{color: #e6a79b;}
+table, th, td {border: 2px solid black;}
+p{color: #ECD078;}
