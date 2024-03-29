@@ -1,0 +1,21 @@
+body{background-color:#fff;}
+h1, h2, h3 {color: #000000; }
+a:hover {color: #f33311;}
+nav {background-color: #cfacef;}
+nav a {color: #391c40;
+        padding: 10px;
+        margin-bottom: 30px; }
+nav a:hover{color: #9bd7e6;}
+@media only screen and (max-width: 896px) {
+        .nav{display: none;}
+        nav a {
+                width: 100%;
+                display: block;
+               
+                margin: -10px;}
+        span {display: none;}
+    }
+table, th, td {border: 2px solid black;}
+p{color: #000000;} /**/
+.intro{text-align:center;margin-left: 2em; margin-right: 2em;}
+.img1 {float: left; margin-right: 10px; max-width: 100%;}
