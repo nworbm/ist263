@@ -1,0 +1,66 @@
+/* this is for the skip to content button */
+.skip {background-color: rgb(255, 255, 255);
+    padding: 7px;
+    border: 2px solid #000; 
+    text-decoration: none;
+    position:absolute; /* positions relative to topp and bottom of viewport */ 
+    top: 10px; 
+    left: -999px;  /* push the button off the screen */
+}
+
+.skip:focus /* when the button is tabbed to is when its in focus*/{
+    left: 10px; 
+}
+
+    
+
+body{background-color:#fff;}
+h1, h2, h3 {color: #000000; }
+/*nav style */
+nav {background-color: #cfacef;}
+.navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+.logo a {
+font-size: 24px; 
+font-weight: 400;
+}
+
+.pages a {
+margin-left: 20px; 
+text-decoration: none;
+color: #333; 
+}
+
+.pages a:hover {
+color: #007bff; }
+
+@media only screen and (max-width: 896px) {
+        .nav{display: none;}
+        nav a {
+                width: 100%;
+                display: block;
+               
+                margin: -10px;}
+        span {display: none;}
+    }
+
+/*end of nav style*/
+
+
+
+a:hover {color: #f33311;}
+
+
+table, th, td {border: 2px solid black;}
+p{color: #000000;} /**/
+.intro{text-align:center;margin-left: 2em; margin-right: 2em;}
+.img1 {float: left; margin-right: 10px; max-width: 100%;}
+
+.footertext{
+        float: right;
+    }
