@@ -2,96 +2,210 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Works</title>
+    <title>Mariah Brown's Portfolio &mdash; WORKS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="stylesheet.css">
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
    
     <style> 
     body {
         font-family: 'Work Sans';
+        margin: 0;
+        padding: 0;
     }
 
-    h1 {position: relative; text-align: center; margin-top: 20px;  font-weight: 900;
-    font-style:normal;
+    h1, h2, h3 {
+        text-align: center;
+        font-weight: 900;
+        font-style: normal;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    h2 {position: relative; text-align: center; margin-top: 80px;  font-weight: 900;font-style: normal;
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+
     }
 
-    h3 {position: relative; text-align: center;
+    .project {
+        display: flex;
+       
+        background-color: #ccc;
+        border-radius: 2em;
+        padding: 30px;
+        margin: 40px;
+        flex-direction: row;
     }
 
-    .projects{display: flex; justify-content: space-between; margin: 30px;
+    .project-content {
+        display: flex;
+        align-items: center;
     }
 
-    .projecttext{margin-left:30px; display: flex;
+    .projecttext {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
-    .resume{text-align: center;margin:0 auto;
+    .resume {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    iframe{margin-right: 20px; border: 30px;}
+  
 
-    .resume object{width: 600px; height: 700px; margin-top: 20px;
+    .project iframe {
+        margin-right: 20px;
+        border: 0;
+        max-width: 920px; 
+        
     }
 
-    .form {margin:30px; display: flex; background-color: #ccc; padding: 20px; border-radius: 30px;
+    .resume object {
+        width: 100%;
+        max-width: 600px;
+        height: 700px;
+    }
+
+    .form {
+        margin: 0 30px;
+        padding: 20px;
+        background-color: #ccc;
+        border-radius: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     textarea, input[type=text], select {
-        width: 100%;
+        width: calc(100% - 40px);
         padding: 12px 20px;
         margin: 8px 0;
-        display: inline-block;
+        display: block;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        }
-    main{margin-left: 20px;}
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+    
+    @media only screen and (max-width: 920px) {
+    .projects {
+        flex-direction: column; /* Change flex direction for larger screens */
+        flex-wrap: wrap; /* Allow projects to wrap */
+        justify-content: space-between; /* Add space between projects */
+        min-width: 0;
+        flex-basis: 0;
+        flex-shrink: 10px;
+    }
+
+    .project-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+   
+
+    }
+
+    iframe {
+        position: sticky;
+    }
+
+   
+}
 
     </style>
+
+<script>
+    /* turn on stack nav when user clicks the hamburger */ 
+    function switchnav() {
+
+        if (document.getElementById("navlinks").style.getPropertyValue("display") == "block") {
+            document.getElementById("navlinks").style.display = "none";
+        }
+        else {
+            document.getElementById("navlinks").style.display = "block";
+        }
+    }
+    
+</script>
 </head>
 <body>
 
     <nav class="navbar">
+        <a href="#skip" class="skip">Skip to Content</a><br>
+
         <div class="navdiv">
             <div class="logo"><a href="#">Mariah Brown</a></div>
-            <div class="pages">
-                <a href="index.html">HOME</a>
+            <div class="pages"id="navlinks">
+                <a href="index2.html">HOME</a>
                 <a href="skills.html">ABOUT</a>
-                <a href="contact.html">WORKS</a>
+                <a href="works.html">WORKS</a>
             </div>
+    <img src="../../lecturenotes/week12Hamburger_icon.jpg" alt="hamburger icon" id="hamicon" onclick="switchnav();">    
         </div>
     </nav>
+
 <main>
 <section>
-    <h1>PROJECTS</h1>
-        <div class="projects">
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSpczIN0SkNLI8pl-6lUzL5ppNhQWequWxxrswhfWU1P7yi0Zm6o_g6BkD8Moa9mFW6lHqaTF4a8bNI/embed?start=false&loop=false&delayms=10000"  width="480" height="299"  allowfullscreen="false"></iframe>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRbhhN2i5G_CsgSOtUEBGMsy_5xNDSzw3_-66f5sqtIgg-NBAgsx-gBN7pJI-aWi3KwyJ9-H4u67VyM/embed?start=true&loop=false&delayms=5000"  width="480" height="299" allowfullscreen="false"></iframe>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6ykYq1d-96fLRIf2lmO86ySqEUWcW9Ze5nvnaSt_SmLPR_Bnhb9uT3LmXpDKzYFA0dpWtcOhlX9Zt/embed?start=false&loop=false&delayms=10000"  width="480" height="299" allowfullscreen="false"></iframe>
-        </div>
+    <h1>RECENT PROJECTS</h1>
 
-
-        <div class="projecttext">
-            <p>Scholarli is an IST 263 project which seeks combine <br> the everyday needs of college students into one app. <br> Many students struggle with time management and <br> accessing helpful resources, which <br> Scholarli plans to fix. </p>
-            <p style="margin-left: 30px;">After witnessing students throw away well-used items<br> my Freshman year and then spending hundreds of <br> dollars on dorm items in my Sophomore year, I <br> began working on an initiative which increases <br> sustainability and community on campus by recycling<br> and reselling dorm goods. Operations should begin by <br> end of Spring, 2024.</p>
-            <p style="margin-left: 33px;">As a consultant for eHarmony <br> (through my MGT 247 class), I provided invaluable <br> insights and strategies to enhance user <br> experience and drive engagement on their platform. </p>
+            <div class="project">
+                <div class="project-content">
+                    <object type="application/pdf" data="scholarli slide deck.pdf"width=87% height="250"></object>                    
+                    <div class="projecttext">
+                        <p id="skip">Scholarli is an IST 263 project which seeks combine<br> the everyday needs of college students into one app.<br> Many students struggle with time management<br> and accessing helpful resources, which Scholarli plans to fix. </p>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="two">   
+            <div class="project">
+                <div class="project-content">
+                    <object type="application/pdf" data="DormBank Slide Deck (3).pdf" width="100%" height="299"></object>                    
+                <div class="projecttext">
+                        <p>After witnessing students throw away well-used items<br> my Freshman year and then spending hundreds of <br> dollars on dorm items in my Sophomore year, I <br> began working on an initiative which increases <br> sustainability and community on campus by recycling<br> and reselling dorm goods. Operations should begin by <br> end of Spring, 2024.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="three">
+            <div class="project">
+                <div class="project-content">
+                    <object type="application/pdf" data="MGT 247- eHarmony.pdf" width="102%" height="299"></object>                    
+                    <div class="projecttext">
+                        <p>As a consultant for eHarmony <br> (through my MGT 247 class), I provided invaluable <br> insights and strategies to enhance user <br> experience and drive engagement on their platform. </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>  
 </section>
 
 <hr>
 
 <section>
     <h2>RESUME</h2>
-        <div class="resume">
-            <object type="application/pdf" data="MariahBrown_Resume_'24.pdf" width="600" height="700"></object>
-        </div>
+    <div class="resume">
+        <object type="application/pdf" data="MariahBrown_Resume_'24.pdf" width="100%" height="700"></object>
+    </div>
 </section>
 
 <section>
-<hr>
+    <hr>
     <h3>CONTACT ME!</h3>
     <div class="form">
         <form action="https://formspree.io/f/xjvnyzzn" method="post" >
@@ -104,17 +218,17 @@
             <label for="message">MESSAGE:</label>
             <textarea id="message" name="message" rows="10" cols="30"></textarea><br>
 
-            <input type="submit" value="Submit Form" class="submit">
+            <input type="submit" value="Submit Form">
         </form>
-    </div>  
-</section>
-
-    <footer>
-        <hr>  
-         &copy; Mariah Brown 2024 
-        <div class="footertext"><a href="https://www.linkedin.com/in/mariah-sbrown/">LinkedIn</a> <a href="mailto:mbrown90@syr.edu">Email</a>
-        </div>
+    </div>
+            <footer>
+                <hr>  
+                &copy; Mariah Brown 2024 
+                <div class="footertext">
+                    <a href="https://www.linkedin.com/in/mariah-sbrown/">LinkedIn</a> 
+                    <a href="mailto:mbrown90@syr.edu">Email</a>
+                </div>
             </footer>
-</main> 
-</body>
-</html>
+        </body>
+        </html>
+        

@@ -1,22 +1,39 @@
 
-
-    
-
 body{background-color:#fff;}
-h1, h2, h3 {color: #000000; }
-/*nav style */
-nav {background-color: #cfacef;}
+h1, h2, h3 {color: #9d5adc; }
+
+/* skip to content*/
+.skip {background-color: #fff;
+    padding: 7px;
+    border: 2px solid #000; 
+    text-decoration: none;
+    position:absolute; /* positions relative to topp and bottom of viewport */ 
+    top: 10px; 
+    left: -999px;  /* push the button off the screen */
+}
+.skip:focus /* when the button is tabbed to is when its in focus*/{
+    left: 10px; 
+}
+/* end skip to content*/
+
+/* nav style */
 .navdiv {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
     }
-
+/*end nav style */
 .logo a {
-font-size: 24px; 
-font-weight: 400;
+    font-size: 24px; 
+    font-weight: 400;
+    text-decoration:overline;
+    font-size: 1.5rem;
+    color: #000;
 }
+
+
+p {font-size:larger ;}
 
 .pages a {
 margin-left: 20px; 
@@ -37,7 +54,35 @@ color: #007bff; }
         span {display: none;}
     }
 
-/*end of nav style*/
+
+    #hamicon {
+        width: 35px;
+        display: none;
+        cursor: pointer; 
+        margin-left: -25px;
+        
+    }
+
+    @media only screen and (max-width: 920px) {
+        nav a {
+            width: 100%;
+            padding: 10px 0px;
+            display: block; 
+        }
+        span {
+            display: none;
+        }
+        #hamicon {
+            display: block;
+        }
+        #navlinks {
+            display: none;
+        }
+
+        .img1 {
+            width: 150px;
+        }
+    }
 
 
 
@@ -46,9 +91,19 @@ a:hover {color: #f33311;}
 
 table, th, td {border: 2px solid black;}
 p{color: #000000;} /**/
-.intro{text-align:center;margin-left: 2em; margin-right: 2em;}
-.img1 {float: left; margin-right: 10px; max-width: 100%;}
 
-.footertext{
+
+
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+    .footertext a {
+        margin-right: 10px;
+        color: #000;
         float: right;
+    
     }

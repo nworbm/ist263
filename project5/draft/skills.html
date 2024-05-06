@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- so i want to ad onhover (JS) that changes the background images-->
     <head>
       <meta charset="utf-8">  
-      <title>Skills</title>
+      <title>Mariah Brown's Portfolio &mdash; SKILLS</title>
       <link rel="stylesheet" href="stylesheet.css">
-      <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'> <!-- I like the font on the BYRD Mueseum-->
       <title>Works</title>
       <style> 
       body {
           font-family: 'Work Sans';
+ 
       }
       
       h1 , h2{text-align: center;
@@ -17,59 +19,97 @@
     .section1, .section2, .section3, .section4 {text-align: center; margin-bottom: 50px;
     }
 
+    #innovationsection {
+        display: inline-block;
+        background-image: url('innovatino.jpg');
+        background-size: cover;
+        background-position: center;
+
+    }
+
     main{margin: 30px;}
 
       
       </style>
+
+
+
+<script>
+    /* turn on stack nav when user clicks the hamburger */ 
+    function switchnav() {
+
+        if (document.getElementById("navlinks").style.getPropertyValue("display") == "block") {
+            document.getElementById("navlinks").style.display = "none";
+        }
+        else {
+            document.getElementById("navlinks").style.display = "block";
+        }
+    }
+</script>
+
     </head>
 
     <body>
     <nav class="navbar">
+        <a href="#skip" class="skip">Skip to Content</a><br>
+       
+
         <div class="navdiv">
             <div class="logo"><a href="#">Mariah Brown</a></div>
-            <div class="pages">
-                <a href="index.html">HOME</a>
+            <div class="pages" id="navlinks">
+                <a href="index2.html">HOME</a>
                 <a href="skills.html">ABOUT</a>
-                <a href="contact.html">WORKS</a>
+                <a href="works.html">WORKS</a>
             </div>
+            <img src="../../lecturenotes/week12Hamburger_icon.jpg" alt="hamburger icon" id="hamicon" onclick="switchnav();">
         </div>
     </nav>
 
-    <main>
-    <h1>ABOUT ME</h1>
+<main> 
+
     
+    <div id="skillsection" onmouseover="skills();">
+        <h1 >SKILLS & INTERESTS</h1>
     <section>
         <div class="section1">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo voluptas nesciunt ab magnam iste! Modi ullam veritatis quasi obcaecati deleniti. Voluptate, error! Obcaecati distinctio doloribus, saepe voluptatibus maxime laudantium eum!</p>
+            <p id="skip">R/Rstudio,FL Studio,HTML,CSS, Javascript, Canva, Excel, Adobe Photoshop, German, Buffalo Bills, New York Knicks</p>
         </div>
+    </div>
     </section>
 <hr>
     <section>
+    <div id="innovationsection" onmouseover="innovate();"></div>
         <h2>INNOVATION</h2>
         <div class="section2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis distinctio optio aut debitis illum voluptatibus consequatur ea ullam, saepe earum eveniet eum aperiam aspernatur officia cupiditate inventore quos veritatis.</p>
+            <p>As Steve Jobs said, "Innovation distinguishes between a leader and a follower."<br>I only get to live my life once, and I do not wish to live it in others' footsteps, following broken pathways. Growing up, I was taught to be a leader and that I could do whatever I put my mind to. To me, Innovation is coming up with new solutions for problems. This does not require disruptiveness;I dont't need to create the<em>"next big thing"</em>, or be Mark Zuckerberg. To be innovative, is to be willing to learn, adapt, and pursue.<br></p>
         </div>
+      
     </section>
 <hr>
     <section>
+    <div id="analyticssection" onmouseover="analytics();">
         <h2>ANALYTICS</h2>
         <div class="section3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis distinctio optio aut debitis illum voluptatibus consequatur ea ullam, saepe earum eveniet eum aperiam aspernatur officia cupiditate inventore quos veritatis.</p>
+            <p>Ever since my first statistics class in middle school, I have had an interest in statistics applied to real-world settings. <br> In highschool, I used my novice analytical skills to 
+                help my school in multiple philanthropic activities and events such as an annual art auction where I individually organized the event to raise money for communities in need. In two years, the auctions
+                raised over</p>
         </div>
+    </div>
     </section>
 <hr>
     <section>
-        <h2>MUSIC</h2>
+    <div id="createsection" onmouseover="create();">
+        <h2>CREATIVE</h2>
         <div class="section4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis distinctio optio aut debitis illum voluptatibus consequatur ea ullam, saepe earum eveniet eum aperiam aspernatur officia cupiditate inventore quos veritatis.</p>
+            <p> Outside of my academics, I love to be creative. I have a passion in music; I have been making beats (FL Studio) and compositions for over five years. Producing allows me to express myself in ways I'm unable to otherwise.</p>
         </div>
+    </div>
     </section>
-        
-
+    
     </main> 
         <footer>
             <hr>  
-             &copy; Mariah Brown 2024 
+             &copy; Mariah Brown 2024  
             <div class="footertext"><a href="https://www.linkedin.com/in/mariah-sbrown/">LinkedIn</a> <a href="mailto:mbrown90@syr.edu">Email</a>
             </div>
                 </footer>
