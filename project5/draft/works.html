@@ -23,16 +23,11 @@
         margin-bottom: 20px;
     }
 
-    .projects {
-        display: flex;
-        flex-direction: column;
-        margin: 0 30px;
-
-    }
 
     .project {
         display: flex;
-       
+        flex-wrap: wrap;
+        overflow: auto;
         background-color: #ccc;
         border-radius: 2em;
         padding: 30px;
@@ -43,6 +38,7 @@
     .project-content {
         display: flex;
         align-items: center;
+        flex: 1 1 200px;
     }
 
     .projecttext {
@@ -72,6 +68,10 @@
         height: 700px;
     }
 
+    section object {
+        max-width: 100;
+    }
+
     .form {
         margin: 0 30px;
         padding: 20px;
@@ -80,6 +80,30 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .pt3{
+        background-color: #000;
+        width: 98%;
+        padding: 20px; /* Add padding to create space around the content */
+        margin-bottom: 25px;
+    }
+
+    .grid-container {
+       /* display: grid;
+        grid-template-columns: auto auto auto;*/
+        -ms-flex: 50%; /* IE 10 */
+        flex: 50%;
+        padding: 0 4px;
+        }
+
+        .grid-item img {
+            margin-top: 8px;
+            vertical-align: middle;
+            margin-left: 50px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+        }
 
     textarea, input[type=text], select {
         width: calc(100% - 40px);
@@ -109,12 +133,14 @@
         justify-content: space-between; /* Add space between projects */
         min-width: 0;
         flex-basis: 0;
+        padding: 10px;
     }
 
     .project-content {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        
    
 
     }
@@ -164,17 +190,16 @@
 
             <div class="project">
                 <div class="project-content">
-                    <object type="application/pdf" data="scholarli slide deck.pdf" width=87 height="250"></object>
+                    <object type="application/pdf" data="scholarlislidedeck.pdf" width=400 height="350"></object>
                     <div class="projecttext">
                         <p id="skip">Scholarli is an IST 263 project which seeks combine<br> the everyday needs of college students into one app.<br> Many students struggle with time management<br> and accessing helpful resources, which Scholarli plans to fix. </p>
                     </div>
                 </div>
             </div>
-    
     <div class="two">   
             <div class="project">
                 <div class="project-content">
-                    <object type="application/pdf" data="DormBank Slide Deck (3).pdf" width="100" height="299"></object>                    
+                    <object type="application/pdf" data="DormBankSlideDeck.pdf" width="400" height="350"></object>
                 <div class="projecttext">
                         <p>After witnessing students throw away well-used items<br> my Freshman year and then spending hundreds of <br> dollars on dorm items in my Sophomore year, I <br> began working on an initiative which increases <br> sustainability and community on campus by recycling<br> and reselling dorm goods. Operations should begin by <br> end of Spring, 2024.</p>
                     </div>
@@ -184,7 +209,7 @@
     <div class="three">
             <div class="project">
                 <div class="project-content">
-                    <object type="application/pdf" data="MGT 247- eHarmony.pdf" width="102" height="299"></object>                    
+                    <object type="application/pdf" data="MGT247eHarmony.pdf" width="400" height="350"></object>
                     <div class="projecttext">
                         <p>As a consultant for eHarmony <br> (through my MGT 247 class), I provided invaluable <br> insights and strategies to enhance user <br> experience and drive engagement on their platform. </p>
                     </div>
@@ -192,9 +217,19 @@
             </div>
         </div>
 </section>
+<section class="pt3">
+    <h3>DESIGN SKILLS... A WORK IN PROGRESS</h3>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="fashion_forte.png" alt="mixtape magazine post of the history of hip hop fashion with pop culture legends" style="width:20%;"> 
+            <img src="21review.png" alt="mixtape magazine post cover of 21 savages american dream album cover" style="width:20%;">
+            <img src="reels.png" alt="mixtape magazine post: is instagram reels the new youtube? designed with rappers in background." style="width:20%;">
+            <img src="spring_break.png" alt="mixtape magazine post cover: Mixtape spring break hits. Eboard shoot in the background with edits." style="width: 20%;">
+        </div>
 
-<hr>
+      </div>
 
+</section>
 <section>
     <h2>RESUME</h2>
     <div class="resume">

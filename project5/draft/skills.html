@@ -11,6 +11,8 @@
           font-family: 'Work Sans';
  
       }
+
+    
       
       h1 , h2{text-align: center;
         }
@@ -18,18 +20,54 @@
     .section1, .section2, .section3, .section4 {text-align: center; margin-bottom: 50px;
     }
 
+    #wireless {
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            
+            width: 100%;
+            height: 78%;
+            z-index: -1;
+
+    }
+
     #innovationsection {
         display: inline-block;
-        background-image: url('innovatino.jpg');
+        background-image: url('6527739.jpg');
         background-size: cover;
         background-position: center;
 
     }
 
+    #innovationsection {
+        margin-top: 10em;
+    }
+
+    #beatstars {
+        display: block;
+        margin: 0 auto;
+    }
+
     main{margin: 30px;}
 
+
+
+    h1 {
+        font-size: 3em;
+        margin-top: 150px;
+    }
+
+    .section1 h3 {
+        font-size: 2em;
+        color: #000;
+        margin-bottom: 80px;
+    }
       
       </style>
+    
 
 
 
@@ -51,7 +89,7 @@
     <body>
     <nav class="navbar">
         <a href="#skip" class="skip">Skip to Content</a><br>
-       
+
 
         <div class="navdiv">
             <div class="logo"><a href="#">Mariah Brown</a></div>
@@ -66,17 +104,15 @@
 
 <main> 
 
-    
+    <img src="6527739.jpg" alt="cool background image phtographed by Mariah" id="wireless">
     <div id="skillsection" onmouseover="skills();">
         <h1 >SKILLS &amp; INTERESTS</h1>
     <section>
         <div class="section1">
-            <p id="skip">R/Rstudio,FL Studio,HTML,CSS, Javascript, Canva, Excel, Adobe Photoshop, German, Buffalo Bills, New York Knicks</p>
+            <h3 id="skip">R/Rstudio, FL Studio, HTML, CSS, Javascript, Canva, Excel, Adobe Photoshop, German, Buffalo Bills, New York Knicks</h3>
         </div>
     </section>
     </div>
-
-<hr>
     <section>
     <div id="innovationsection" onmouseover="innovate();"></div>
         <h2>INNOVATION</h2>
@@ -91,7 +127,7 @@
         <div class="section3">
             <p>Ever since my first statistics class in middle school, I have had an interest in statistics applied to real-world settings. <br> In highschool, I used my novice analytical skills to 
                 help my school in multiple philanthropic activities and events such as an annual art auction where I individually organized the event to raise money for communities in need. In two years, the auctions
-                raised over</p>
+                raised thousands of dollars.</p>
         </div>
     </div>
     </section>
@@ -102,10 +138,11 @@
         <div class="section4">
             <p> Outside of my academics, I love to be creative. I have a passion in music; I have been making beats (FL Studio) and compositions for over five years. Producing allows me to express myself in ways I'm unable to otherwise.</p>
         </div>
+        <iframe src="https://player.beatstars.com/?storeId=147471" width="100%" height="300" style="max-width:1024px;" id="beatstars"></iframe>
     </div>
     </section>
 
-    </main>
+</main>
         <footer>
             <hr>
              &copy; Mariah Brown 2024
